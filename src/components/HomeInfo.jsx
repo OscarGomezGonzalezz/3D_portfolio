@@ -48,8 +48,12 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>
-        Need a project done or looking for an engineer? <br/> I'm just a few keystrokes away
+        Need a project done or looking for an engineer? <br/> Reach me through LinkedIn
       </p>
+      <Link to='https://www.linkedin.com/in/oscargomezgonzalez/' className='neo-brutalism-white neo-btn'>
+          My profile
+          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+      </Link>
     </div>
     );
   }
