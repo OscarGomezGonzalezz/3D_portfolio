@@ -3,6 +3,8 @@ import git from './git.svg'
 import githubActions from './github-actions.svg'
 import github from './github.svg'
 import html from './html.svg'
+import bank from './bank.svg'
+import shop from './shop.svg'
 import javascript from './javascript.svg'
 import mongodb from './mongodb.svg'
 import motion from './motion.svg'
@@ -31,6 +33,7 @@ import nginx from './nginx.svg'
 import keycloak from './keycloak.svg'
 import springSecurity from './spring-security.svg'
 import python from './python.svg'
+import iam from './iam.svg'
 import java from './java.svg'
 
 export {
@@ -42,10 +45,12 @@ export {
     githubActions,
     html,
     javascript,
+    shop,
     keycloak,
     mongodb,
     github,
     java,
+    iam,
     python,
     motion,
     mui,
@@ -64,6 +69,7 @@ export {
     snapgram,
     summiz,
     springSecurity,
+    bank,
     threads,
     arrow,
     soundon,

@@ -4,6 +4,8 @@ import {
     css,
     estate,
     nginx,
+    bank,
+    shop,
     git,
     githubActions,
     github,
@@ -22,6 +24,7 @@ import {
     docker,
     keycloak,
     springSecurity,
+    iam
 } from "../assets/icons";
 
 export const skills = [
@@ -177,45 +180,45 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: bank,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'UniWallet',
+        description: 'Banking App( cross-platform ) created with React Native + Expo Router, connected to a Firebase DB for a financial centralized management.',
+        link: 'https://github.com/OscarGomezGonzalezz/banking-app',
     },
     {
-        iconUrl: threads,
+        iconUrl: iam,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'IAM Integration with Spring',
+        description: 'Backend created with Spring, and linked with Keycloak as the OAuth2 Resource Server (access token creation and validation for RBAC).',
+        link: 'https://github.com/OscarGomezGonzalezz/Keycloak-Backend',
     },
     {
-        iconUrl: car,
+        iconUrl: kubernetes,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Cloud Native TODO List - Kubernetes Version',
+        description: 'MERN application orchestrated with kubernetes & Helm (CI pipeline enabled), using an Nginx ingress controller as a reverse proxy for routing and enabling TLS.',
+        link: 'https://github.com/OscarGomezGonzalezz/MERN-k8s',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: docker,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Cloud Native TODO List - Docker Compose Version',
+        description: 'MERN application deployed with docker-compose, and enrouted with a reverse proxy (Nginx).',
+        link: 'https://github.com/OscarGomezGonzalezz/MERN-compose',
     },
     {
-        iconUrl: estate,
+        iconUrl: shop,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Amazon WebShop Clone',
+        description: 'Amazon-based WebShop, launched with XAMPP (Apache and MySQL).',
+        link: 'https://github.com/OscarGomezGonzalezz/Amazon-Web-Project',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'Youtube & Vimeo Data Miner',
+        description: 'Data Miner project from Youtube and Vimeo.',
+        link: 'https://github.com/OscarGomezGonzalezz/VideoMinerAplication',
     }
 ];
