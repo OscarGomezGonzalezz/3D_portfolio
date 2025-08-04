@@ -6,23 +6,16 @@ import { About, Home, Projects } from "./pages";
 const App = () => {
   return (
     <main className='bg-slate-300/20'>
-      <Router>
+      <Router basename="/3D_portfolio">
         <Navbar />
-        <Routes>
-          <Route path='/3D_portfolio' element={<Home />} />
-          <Route
-            path='/*'
-            element={
-              <>
-                <Routes>
-                  <Route path='/about' element={<About />} />
-                  <Route path='/projects' element={<Projects />} />
-                </Routes>
-                <Footer />
-              </>
-            }
-          />
-        </Routes>
+        <div className='flex-grow'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+        <Footer />
       </Router>
     </main>
   );
