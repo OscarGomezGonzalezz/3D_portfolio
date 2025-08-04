@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-import planeScene from "../assets/3d/plane.glb";
+import planeScene from "../assets/3d/plane2.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
 export function Plane({ isRotating, ...props }) {
@@ -15,17 +15,20 @@ export function Plane({ isRotating, ...props }) {
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
     if (isRotating) {
-      actions["Take 001"].play();
+      actions["Flying"].play();
     } else {
-      actions["Take 001"].stop();
+      actions["Flying"].stop();
     }
   }, [actions, isRotating]);
 
   return (
     <mesh {...props} ref={ref}>
-      // use the primitive element when you want to directly embed a complex 3D
-      model or scene
-      <primitive object={scene} />
+     <primitive
+  object={scene}
+  scale={8}
+  position={[0, 0, 0]}
+  rotation={[0, 0, 0]}
+/>
     </mesh>
   );
 }

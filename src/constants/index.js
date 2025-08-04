@@ -1,8 +1,6 @@
 import { sevilleUniversity, hochschuleReutlingen, esb } from "../assets/images";
 import {
-    car,
     css,
-    estate,
     nginx,
     bank,
     shop,
@@ -13,13 +11,10 @@ import {
     javascript,
     linkedin,
     mongodb,
-    pricewise,
     react,
-    snapgram,
     java,
     python,
     summiz,
-    threads,
     kubernetes,
     docker,
     keycloak,

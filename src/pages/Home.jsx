@@ -103,8 +103,11 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
-
-      <div className='absolute bottom-2 left-2'>
+      <div className='absolute left-0 right-0 z-10 flex items-center justify-center absolute bottom-3'>
+    <p className='text-black text-sm md:text-base select-none pointer-events-none'>
+      Drag the island with your mouse to explore different information points.
+    </p>
+    <div className='absolute bottom-2 left-3'>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
           alt='jukebox'
@@ -112,7 +115,9 @@ const Home = () => {
           className='w-10 h-10 cursor-pointer object-contain'
         />
       </div>
+  </div>
     </section>
+    
   );
 };
 
