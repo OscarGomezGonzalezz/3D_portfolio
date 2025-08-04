@@ -2,9 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
-import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences, skills, education, languages } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -15,15 +13,14 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          Óscar Gómez
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer from Spain, specializing in the intersection of Cloud and Cybersecurity. 
         </p>
       </div>
 
@@ -48,12 +45,6 @@ const About = () => {
 
       <div className='py-16'>
         <h3 className='subhead-text'>Work Experience.</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-          <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
-          </p>
-        </div>
 
         <div className='mt-12 flex'>
           <VerticalTimeline>
@@ -61,13 +52,16 @@ const About = () => {
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
+                iconStyle={{ background: experience.iconBg ,
+                  width: '60px',
+                  height: '60px',
+                }}
                 icon={
                   <div className='flex justify-center items-center w-full h-full'>
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
+                      className='w-[80%] h-[80%] object-contain'
                     />
                   </div>
                 }
@@ -105,10 +99,75 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+      <div className='py-16'>
+        <h3 className='subhead-text'>Education.</h3>
 
-      <hr className='border-slate-200' />
+        <div className='mt-12 flex'>
+          <VerticalTimeline>
+            {education.map((School, index) => (
+              <VerticalTimelineElement
+                key={School.company_name}
+                date={School.date}
+                iconStyle={{ background: School.iconBg }}
+                icon={
+                  <div className='flex justify-center items-center w-full h-full'>
+                    <img
+                      src={School.icon}
+                      alt={School.company_name}
+                      className='w-[65%] h-[65%] object-contain'
+                    />
+                  </div>
+                }
+                contentStyle={{
+                  borderBottom: "8px",
+                  borderStyle: "solid",
+                  borderBottomColor: School.iconBg,
+                  boxShadow: "none",
+                }}
+              >
+                <div>
+                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                    {School.title}
+                  </h3>
+                  <p
+                    className='text-black-500 font-medium text-base'
+                    style={{ margin: 0 }}
+                  >
+                    {School.company_name}
+                  </p>
+                </div>
 
-      <CTA />
+                <ul className='my-5 list-disc ml-5 space-y-2'>
+                  {School.points.map((point, index) => (
+                    <li
+                      key={`experience-point-${index}`}
+                      className='text-black-500/50 font-normal pl-1 text-sm'
+                    >
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
+      </div>
+
+     <div>
+  <h3 className='subhead-text'>Languages.</h3>
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+    {languages.map((language, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center justify-center bg-white rounded-x p-4 hover:shadow-lg transition-shadow"
+    >
+      <div className="text-4xl mb-2">{language.icon}</div>
+      <p className="text-sm font-medium text-gray-700">{language.level}</p>
+    </div>
+  ))}
+  </div>
+</div>
+
     </section>
   );
 };

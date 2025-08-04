@@ -1,15 +1,11 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import sevilleUniversity from './sevilleUniversity.png'
+import hochschuleReutlingen from './hochschuleReutlingen.svg'
 import logo from './logo.svg'
+import esb from './esb.png'
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo
+    sevilleUniversity,
+    hochschuleReutlingen,
+    logo,
+    esb
 }

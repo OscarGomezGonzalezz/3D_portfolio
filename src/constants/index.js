@@ -1,51 +1,59 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { sevilleUniversity, hochschuleReutlingen, esb } from "../assets/images";
 import {
     car,
-    contact,
     css,
     estate,
-    express,
+    nginx,
     git,
+    githubActions,
     github,
     html,
     javascript,
     linkedin,
     mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
     pricewise,
     react,
-    redux,
-    sass,
     snapgram,
+    java,
+    python,
     summiz,
-    tailwindcss,
     threads,
-    typescript
+    kubernetes,
+    docker,
+    keycloak,
+    springSecurity,
 } from "../assets/icons";
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: docker,
+        name: "Docker",
+        type: "Cloud",
     },
     {
-        imageUrl: express,
-        name: "Express",
+        imageUrl: kubernetes,
+        name: "Kubernetes",
+        type: "Cloud",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
         type: "Backend",
     },
     {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
+        imageUrl: nginx,
+        name: "Nginx",
+        type: "Proxy",
     },
     {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
+        imageUrl: keycloak,
+        name: "Keycloak",
+        type: "IAM",
+    },
+    {
+        imageUrl: springSecurity,
+        name: "Spring-Security",
+        type: "Backend",
     },
     {
         imageUrl: html,
@@ -58,127 +66,112 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
         imageUrl: react,
         name: "React",
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
+        imageUrl: css,
+        name: "CSS",
         type: "Frontend",
     },
     {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
+        imageUrl: python,
+        name: "Python",
+        type: "ML",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+    {
+        imageUrl: githubActions,
+        name: "GitHub-Actions",
+        type: "Version Control",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Research Associate ",
+        company_name: "Hochschule Reutlingen",
+        icon: hochschuleReutlingen,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "May 2025 - August 2025",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Integrate and automate features of an IAM software into the global structure of the FoPraNet-BW Project, \
+             by the hand of Prof. Dr. rer. medic. Christian Thies and Dipl.-Ing. (FH) Sven Dörflinger."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
+        title: "Junior Consultant",
+        company_name: "ESB Student Consulting e.V",
+        icon: esb,
+        iconBg: "white",
         date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conduct a market analysis of existing both generative and specialized AI solutions in the sustainability field providing potential use cases relevant for a $90B annual revenue client .",
         ],
     },
 ];
 
-export const socialLinks = [
+export const education = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        title: "Software Engineering",
+        company_name: "Universidad de Sevilla",
+        icon: sevilleUniversity,
+        iconBg: "white",
+        date: "2022 - 2026",
+        points: [
+            "Grade: 7.75/10 (Upper Second Class Honours 2:1)",
+            "Being part of the sports federation",
+        ],
     },
+    {
+        title: "Exchange Year",
+        company_name: "Hochschule Reutlingen",
+        icon: hochschuleReutlingen,
+        iconBg: "#fee1dcff",
+        date: "2024 - 2025",
+        points: [
+            "Grade: 1.47/5 (First-class honours 1st)",
+            "German Intensive Language lessons"
+        ],
+    },
+];
+export const languages = [
+    {
+        name: 'Spanish',
+        level: 'Native',
+        icon: "🇪🇸",
+    },
+    {
+        name: 'English',
+        level: 'C1',
+        icon: "🇬🇧",
+    },
+    {
+        name: 'German',
+        level: 'A2',
+        icon: "🇩🇪",
+    }
+];
+export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/oscargomezgonzalezz',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/oscargomezgonzalez/',
     }
 ];
 
